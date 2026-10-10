@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Kemitraan Agen Pulsa & PPOB</title>
+    <meta name="description" content="Pendaftaran agen pulsa, paket data internet, token PLN, voucher game dan PPOB resmi dengan modal terjangkau.">
+    
+    <!-- Bootstrap 5 & Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <style>
+        :root {
+            --brand-blue: #0b2545;
+            --brand-green: #139a8c;
+            --brand-orange: #ea580c;
+            --brand-light: #f8fafc;
+        }
+        body {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            color: #1e293b;
+            background-color: #fff;
+        }
+        .hero {
+            background: linear-gradient(135deg, var(--brand-blue) 0%, #134074 100%);
+            color: #fff;
+            padding: 75px 0 55px;
+        }
+        .card-custom {
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            transition: transform .2s ease, box-shadow .2s ease;
+        }
+        .card-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+        }
+        .icon-circle {
+            width: 52px;
+            height: 52px;
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(19, 154, 140, 0.12);
+            color: var(--brand-green);
+            font-size: 1.6rem;
+        }
+        .step-badge {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--brand-green);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin: 0 auto 12px;
+        }
+        .btn-brand {
+            background: var(--brand-orange);
+            color: #fff;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 24px;
+        }
+        .btn-brand:hover {
+            background: #c2410c;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigasi -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: var(--brand-blue);">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+            <i class="bi bi-wallet2 text-success me-2"></i>PulsaNet Digital
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item"><a class="nav-link" href="#keunggulan">Keunggulan</a></li>
+                <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+                <li class="nav-item"><a class="nav-link" href="#simulasi">Simulasi Margin</a></li>
+                <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                    <a class="btn btn-brand btn-sm px-3" href="#pendaftaran">Daftar Agen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero text-center text-lg-start">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <span class="badge bg-success mb-2 px-3 py-2">Registrasi Kemitraan Terbuka</span>
+                <h1 class="display-5 fw-bold mb-3">Mulai Usaha Konter Pulsa & Tagihan Digital Dari Rumah</h1>
+                <p class="lead opacity-75 mb-4">
+                    Satu saldo untuk transaksi pulsa semua operator, paket data kuota, token PLN, voucher game, saldo e-wallet, dan pembayaran tagihan bulanan 24 jam non-stop.
+                </p>
+                <div class="d-flex gap-2 flex-wrap justify-content-center justify-content-lg-start">
+                    <a href="#pendaftaran" class="btn btn-brand btn-lg">Daftar Jadi Agen</a>
+                    <a href="#simulasi" class="btn btn-outline-light btn-lg">Hitung Keuntungan</a>
+                </div>
+            </div>
+            <div class="col-lg-5 mt-4 mt-lg-0">
+                <div class="bg-white text-dark p-4 rounded-4 shadow">
+                    <h5 class="fw-bold mb-3 text-primary"><i class="bi bi-shield-check text-success me-2"></i>Keuntungan Bermitra</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Pendaftaran agen bebas biaya registrasi</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Pengisian deposit saldo mulai dari Rp20.000</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Jalur transaksi multi-server cepat & stabil</li>
+                        <li class="mb-0"><i class="bi bi-check-circle-fill text-success me-2"></i>Bisa transaksi via Android & WhatsApp</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Keunggulan -->
+<section id="keunggulan" class="py-5 bg-light">
+    <div class="container text-center py-2">
+        <h2 class="fw-bold mb-2">Mengapa Memilih Kami?</h2>
+        <p class="text-muted mb-5">Dukungan infrastruktur stabil untuk menjaga kelancaran bisnis Anda</p>
+        <div class="row g-4 text-start">
+            <div class="col-md-3">
+                <div class="card card-custom p-4 h-100 bg-white">
+                    <div class="icon-circle mb-3"><i class="bi bi-cash-coin"></i></div>
+                    <h6 class="fw-bold">Harga Modal Bersaing</h6>
+                    <p class="text-muted small mb-0">Harga dasar kompetitif memberi ruang margin keuntungan harian yang lebih sehat.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card card-custom p-4 h-100 bg-white">
+                    <div class="icon-circle mb-3"><i class="bi bi-lightning-charge"></i></div>
+                    <h6 class="fw-bold">Server Responsif</h6>
+                    <p class="text-muted small mb-0">Routing jalur optimal meminimalisir status transaksi pending di jam-jam sibuk.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card card-custom p-4 h-100 bg-white">
+                    <div class="icon-circle mb-3"><i class="bi bi-phone"></i></div>
+                    <h6 class="fw-bold">Produk Lengkap</h6>
+                    <p class="text-muted small mb-0">Ratusan produk digital nasional siap dijual hanya dengan satu nomor akun.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card card-custom p-4 h-100 bg-white">
+                    <div class="icon-circle mb-3"><i class="bi bi-headset"></i></div>
+                    <h6 class="fw-bold">Bantuan CS Siap Siaga</h6>
+                    <p class="text-muted small mb-0">Layanan pengawalan kendala transaksi setiap hari dari pagi hingga malam.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Produk & Layanan -->
+<section id="produk" class="py-5">
+    <div class="container text-center py-2">
+        <h2 class="fw-bold mb-2">Layanan Transaksi Digital</h2>
+        <p class="text-muted mb-5">Kebutuhan harian yang terus dicari pelanggan di sekitar Anda</p>
+        <div class="row g-3 text-start">
+            <div class="col-md-4 col-sm-6">
+                <div class="card card-custom p-3 h-100">
+                    <div class="d-flex align-items-center">
+                        <div class="icon-circle me-3"><i class="bi bi-phone"></i></div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Pulsa Reguler & Transfer</h6>
+                            <p class="text-muted small mb-0">Telkomsel, Indosat, XL, AXIS, Tri, dan Smartfren.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card card-custom p-3 h-100">
+                    <div class="d-flex align-items-center">
+                        <div class="icon-circle me-3"><i class="bi bi-wifi"></i></div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Paket Data & Kuota</h6>
+                            <p class="text-muted small mb-0">Internet reguler 24 jam, mingguan, dan kuota darurat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card card-custom p-3 h-100">
+                    <div class="d-flex align-items-center">
+                        <div class="icon-circle me-3"><i class="bi bi-lightning"></i></div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Token Listrik PLN</h6>
+                            <p class="text-muted small mb-0">Token prabayar instan dan cek tagihan pascabayar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card card-custom p-3 h-100">
+                    <div class="d-flex align-items-center">
+                        <div class="icon-circle me-3"><i class="bi bi-wallet2"></i></div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Top-Up Saldo E-Wallet</h6>
+                            <p class="text-muted small mb-0">DANA, GoPay, OVO, ShopeePay, Maxim, dan LinkAja.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card card-custom p-3 h-100">
+                    <div class="d-flex align-items-center">
+                        <div class="icon-circle me-3"><i class="bi bi-controller"></i></div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Voucher Game Online</h6>
+                            <p class="text-muted small mb-0">Mobile Legends, Free Fire, Roblox, PUBG, Genshin.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card card-custom p-3 h-100">
+                    <div class="d-flex align-items-center">
+                        <div class="icon-circle me-3"><i class="bi bi-receipt"></i></div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Tagihan Bulanan (PPOB)</h6>
+                            <p class="text-muted small mb-0">BPJS Kesehatan, PDAM, IndiHome, dan Cicilan Kredit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3 Langkah Kemitraan -->
+<section class="py-5 bg-light">
+    <div class="container text-center py-2">
+        <h2 class="fw-bold mb-2">3 Langkah Menjadi Mitra</h2>
+        <p class="text-muted mb-5">Alur praktis hingga akun Anda siap digunakan berjualan</p>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="step-badge">1</div>
+                <h6 class="fw-bold">Isi Formulir</h6>
+                <p class="text-muted small">Lengkapi data pendaftaran dan nomor WhatsApp aktif Anda.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="step-badge">2</div>
+                <h6 class="fw-bold">Verifikasi Instan</h6>
+                <p class="text-muted small">Kirim nomor registrasi ke Customer Service kami untuk aktivasi jalur.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="step-badge">3</div>
+                <h6 class="fw-bold">Isi Saldo & Transaksi</h6>
+                <p class="text-muted small">Lakukan isi saldo perdana bebas nominal dan mulai layani pembeli.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Simulasi Keuntungan -->
+<section id="simulasi" class="py-5">
+    <div class="container py-2">
+        <div class="card border-0 shadow-sm p-4 p-md-5 rounded-4 bg-light">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="fw-bold text-success mb-2">Simulasi Potensi Margin</h3>
+                    <p class="text-muted small mb-4">Gunakan slider untuk melihat potensi penghasilan kotor per bulan berdasarkan volume transaksi Anda.</p>
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold">Perkiraan Transaksi per Hari: <span id="txVal" class="text-primary">50</span> trx</label>
+                        <input type="range" class="form-range" id="txRange" min="10" max="200" step="5" value="50">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold">Rata-rata Margin per Transaksi: <span id="marginVal" class="text-primary">Rp 1.500</span></label>
+                        <input type="range" class="form-range" id="marginRange" min="500" max="3500" step="100" value="1500">
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 mt-4 mt-lg-0 text-center">
+                    <div class="bg-white p-4 rounded-3 border shadow-sm">
+                        <span class="text-muted small text-uppercase fw-semibold">Estimasi Laba Kotor Bulanan</span>
+                        <h2 class="display-6 fw-bold text-success my-2" id="profitResult">Rp 2.250.000</h2>
+                        <p class="text-muted small mb-0 fst-italic">*Perhitungan merupakan simulasi matematis (trx × margin × 30 hari), bukan jaminan penghasilan tetap.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Formulir Pendaftaran Agen -->
+<section id="pendaftaran" class="py-5 bg-light">
+    <div class="container py-2">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 bg-white">
+                    <h3 class="fw-bold text-center mb-1">Formulir Pendaftaran Agen</h3>
+                    <p class="text-muted text-center small mb-4">Pastikan nomor WhatsApp aktif untuk verifikasi kemitraan</p>
+
+                    <div id="alertBox" class="alert d-none" role="alert"></div>
+
+                    <!-- Formulir Input -->
+                    <form id="regForm" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label small fw-semibold">Nama Lengkap <span class="text-danger">*</span></label>
+                                <input type="text" id="fullName" class="form-control" required placeholder="Sesuai KTP">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small fw-semibold">Nomor WhatsApp Aktif <span class="text-danger">*</span></label>
+                                <input type="tel" id="whatsapp" class="form-control" required placeholder="08123456789">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small fw-semibold">Kabupaten / Kota <span class="text-danger">*</span></label>
+                                <input type="text" id="city" class="form-control" required placeholder="Contoh: Bandung">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small fw-semibold">Tipe Kemitraan <span class="text-danger">*</span></label>
+                                <select id="agentType" class="form-select">
+                                    <option value="Perorangan (Dipakai Sendiri / Sampingan)">Perorangan (Dipakai Sendiri / Sampingan)</option>
+                                    <option value="Konter Pulsa / Servis HP">Konter Pulsa / Servis HP</option>
+                                    <option value="Warung / Toko Kelontong">Warung / Toko Kelontong</option>
+                                    <option value="Reseller Online">Reseller Online</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label small fw-semibold">Nama Usaha / Toko (Opsional)</label>
+                                <input type="text" id="storeName" class="form-control" placeholder="Nama konter / warung jika ada">
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                                    <label class="form-check-label small text-muted" for="agreeTerms">
+                                        Saya menyatakan data di atas benar dan bersedia dihubungi untuk konfirmasi aktivasi akun agen.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn btn-brand btn-lg w-100">
+                                    <i class="bi bi-send me-1"></i> Kirim Pendaftaran Agen
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Layar Konfirmasi Sukses -->
+                    <div id="successView" class="d-none text-center py-4">
+                        <i class="bi bi-check-circle-fill text-success display-4"></i>
+                        <h4 class="fw-bold mt-2 text-success">Pendaftaran Berhasil Dikirim!</h4>
+                        <p class="text-muted small mb-2">Nomor Registrasi Anda:</p>
+                        <div class="alert alert-light border fw-bold fs-5 text-primary py-2 d-inline-block px-4 mb-3" id="displayRegNo"></div>
+                        <p class="small text-muted mb-4">Klik tombol di bawah ini untuk meneruskan pendaftaran langsung ke CS WhatsApp kami:</p>
+                        <a id="btnWaLink" href="#" target="_blank" class="btn btn-success px-4 py-2">
+                            <i class="bi bi-whatsapp me-2"></i> Konfirmasi ke CS WhatsApp
+                        </a>
+                        <div class="mt-4">
+                            <button type="button" class="btn btn-link btn-sm text-secondary" id="btnReset">Daftarkan akun lainnya</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Accordion -->
+<section id="faq" class="py-5">
+    <div class="container py-2">
+        <h2 class="fw-bold text-center mb-2">Pertanyaan Populer</h2>
+        <p class="text-muted text-center mb-5">Informasi seputar teknis saldo dan transaksi</p>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="accordion" id="faqAcc">
+                    <div class="accordion-item mb-2 border rounded-3 overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
+                                Apakah ada biaya registrasi awal?
+                            </button>
+                        </h2>
+                        <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faqAcc">
+                            <div class="accordion-body small text-muted">
+                                Tidak ada. Pendaftaran sepenuhnya gratis tanpa potongan biaya keanggotaan.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-2 border rounded-3 overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
+                                Berapa saldo minimal untuk memulai?
+                            </button>
+                        </h2>
+                        <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                            <div class="accordion-body small text-muted">
+                                Anda dapat mengisi saldo deposit perdana mulai dari Rp20.000 melalui transfer bank maupun QRIS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-2 border rounded-3 overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3">
+                                Bagaimana jika transaksi pulsa gagal?
+                            </button>
+                        </h2>
+                        <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                            <div class="accordion-body small text-muted">
+                                Jika transaksi dinyatakan gagal oleh operator, saldo modal Anda otomatis dikembalikan secara utuh seketika itu juga.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4 bg-dark text-white text-center text-md-start" style="background-color: var(--brand-blue) !important;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h6 class="fw-bold mb-1">PulsaNet Digital Network</h6>
+                <p class="small text-white-50 mb-0">Platform distribusi pulsa seluler dan payment point online bank tepercaya.</p>
+            </div>
+            <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                <span class="small text-white-50" id="footerWaText">Layanan CS WhatsApp Resmi</span>
+            </div>
+        </div>
+        <hr class="border-secondary my-3">
+        <div class="text-center small text-white-50">
+            &copy; 2026 PulsaNet Digital. Hak Cipta Dilindungi.
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Konfigurasi Nomor WhatsApp CS (Ganti sesuai nomor WhatsApp Anda)
+    const CS_WHATSAPP_NUMBER = "6281221003814";
+
+    // 1. Logika Simulasi Keuntungan
+    const txRange = document.getElementById('txRange');
+    const marginRange = document.getElementById('marginRange');
+    const txVal = document.getElementById('txVal');
+    const marginVal = document.getElementById('marginVal');
+    const profitResult = document.getElementById('profitResult');
+
+    function updateSimulation() {
+        const tx = parseInt(txRange.value, 10);
+        const margin = parseInt(marginRange.value, 10);
+        txVal.textContent = tx;
+        marginVal.textContent = 'Rp ' + margin.toLocaleString('id-ID');
+        const monthly = tx * margin * 30;
+        profitResult.textContent = 'Rp ' + monthly.toLocaleString('id-ID');
+    }
+    txRange.addEventListener('input', updateSimulation);
+    marginRange.addEventListener('input', updateSimulation);
+
+    // 2. Normalisasi Nomor Telepon
+    function normalizePhone(phone) {
+        let clean = phone.replace(/[^0-9]/g, '');
+        if (clean.startsWith('08')) {
+            return '628' + clean.slice(2);
+        }
+        if (clean.startsWith('8')) {
+            return '628' + clean.slice(1);
+        }
+        return clean;
+    }
+
+    // 3. Penanganan Formulir Pendaftaran
+    const regForm = document.getElementById('regForm');
+    const alertBox = document.getElementById('alertBox');
+    const successView = document.getElementById('successView');
+    const displayRegNo = document.getElementById('displayRegNo');
+    const btnWaLink = document.getElementById('btnWaLink');
+    const btnReset = document.getElementById('btnReset');
+
+    regForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        alertBox.className = 'alert d-none';
+        alertBox.textContent = '';
+
+        const fullName = document.getElementById('fullName').value.trim();
+        const rawWa = document.getElementById('whatsapp').value.trim();
+        const city = document.getElementById('city').value.trim();
+        const agentType = document.getElementById('agentType').value;
+        const storeName = document.getElementById('storeName').value.trim() || '-';
+        const agree = document.getElementById('agreeTerms').checked;
+
+        const wa = normalizePhone(rawWa);
+
+        // Validasi
+        if (fullName.length < 3) {
+            showAlert('Nama lengkap harus diisi minimal 3 karakter.', 'danger');
+            return;
+        }
+        if (!/^628[0-9]{8,12}$/.test(wa)) {
+            showAlert('Format nomor WhatsApp tidak valid. Masukkan nomor yang benar (contoh: 08123456789).', 'danger');
+            return;
+        }
+        if (!city) {
+            showAlert('Kabupaten/Kota wajib diisi.', 'danger');
+            return;
+        }
+        if (!agree) {
+            showAlert('Anda harus menyetujui pernyataan kemitraan.', 'danger');
+            return;
+        }
+
+        // Generate Nomor Registrasi Unik
+        const dateStr = new Date().toISOString().slice(2, 10).replace(/-/g, '');
+        const randomHex = Math.floor(Math.random() * 0xffff).toString(16).toUpperCase().padStart(4, '0');
+        const regNumber = `REG-${dateStr}-${randomHex}`;
+
+        // Simpan salinan lokal di browser (Local Storage)
+        const savedData = JSON.parse(localStorage.getItem('agent_leads') || '[]');
+        savedData.push({
+            regNumber,
+            fullName,
+            whatsapp: wa,
+            city,
+            agentType,
+            storeName,
+            submittedAt: new Date().toISOString()
+        });
+        localStorage.setItem('agent_leads', JSON.stringify(savedData));
+
+        // Buat Template Pesan WhatsApp
+        const waMessage = 
+`*PENDAFTARAN AGEN PULSA & PPOB*
+No. Registrasi: *${regNumber}*
+Nama: ${fullName}
+WhatsApp: ${wa}
+Kota/Wilayah: ${city}
+Tipe Agen: ${agentType}
+Nama Toko: ${storeName}
+
+Halo CS, saya telah mengisi formulir di website. Mohon bantuannya untuk aktivasi akun agen. Terima kasih.`;
+
+        const waUrl = `https://wa.me/${CS_WHATSAPP_NUMBER}?text=${encodeURIComponent(waMessage)}`;
+
+        // Tampilkan Tampilan Sukses
+        displayRegNo.textContent = regNumber;
+        btnWaLink.href = waUrl;
+
+        regForm.classList.add('d-none');
+        successView.classList.remove('d-none');
+
+        // Buka WhatsApp otomatis di tab baru
+        window.open(waUrl, '_blank');
+    });
+
+    btnReset.addEventListener('click', function () {
+        regForm.reset();
+        regForm.classList.remove('d-none');
+        successView.classList.add('d-none');
+    });
+
+    function showAlert(msg, type) {
+        alertBox.className = `alert alert-${type}`;
+        alertBox.textContent = msg;
+    }
+</script>
+</body>
+</html>
