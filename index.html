@@ -71,6 +71,17 @@
             background: #c2410c;
             color: #fff;
         }
+        .cursor-pointer {
+            cursor: pointer;
+        }
+        
+        /* Memastikan modal tampil di lapisan paling atas */
+        .modal-backdrop {
+            z-index: 1050;
+        }
+        .modal {
+            z-index: 1055;
+        }
     </style>
 </head>
 <body>
@@ -577,5 +588,42 @@ Halo CS, saya telah mengisi formulir di website. Mohon bantuannya untuk aktivasi
         alertBox.textContent = msg;
     }
 </script>
+
+<!-- Modal Pop-up Daftar Harga -->
+<div class="modal fade" id="modalHarga" tabindex="-1" aria-labelledby="modalHargaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+            
+            <!-- Header Modal -->
+            <div class="modal-header bg-primary-dark text-white py-3 px-4">
+                <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-tag-fill text-accent fs-5"></i>
+                    <h5 class="modal-title fw-bold" id="modalHargaLabel">Daftar Harga Server Real-Time</h5>
+                </div>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            
+            <!-- Body Modal (Kontainer Iframe) -->
+            <div class="modal-body p-0" style="height: 75vh; min-height: 500px; position: relative; background-color: #f8f9fa;">
+                <iframe 
+                    src="http://www.cekmitra.com/harga.js.php?id=d20fb2e3b6062b6477e17339692acff1236df6429fa4508d8a80756f840032d6df87ed62592aaf7c9e63e10030c5de32cfe9-126" 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+                    loading="lazy"
+                    title="Daftar Harga Server">
+                </iframe>
+            </div>
+            
+            <!-- Footer Modal -->
+            <div class="modal-footer bg-light py-2 px-4 justify-content-between">
+                <small class="text-muted">
+                    <i class="bi bi-info-circle me-1"></i> Data harga diperbarui otomatis dari server pusat.
+                </small>
+                <button type="button" class="btn btn-secondary btn-sm rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
