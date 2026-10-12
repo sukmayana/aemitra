@@ -603,12 +603,19 @@ Halo CS, saya telah mengisi formulir di website. Mohon bantuannya untuk aktivasi
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             
-            <!-- Body Modal -->
-            <div class="modal-body p-3" style="min-height: 500px; max-height: 75vh; overflow-y: auto; background-color: #ffffff;">
-                <div id="tabel-harga-wrapper">
-                    <!-- Panggil langsung sebagai script -->
-                    <script src="https://www.cekmitra.com/harga.js.php?id=d20fb2e3b6062b6477e17339692acff1236df6429fa4508d8a80756f840032d6df87ed62592aaf7c9e63e10030c5de32cfe9-126"></script>
+            <!-- Body Modal dengan Iframe & Tombol Buka Langsung -->
+            <div class="modal-body p-0" style="position: relative; height: 75vh; min-height: 500px; background-color: #f8f9fa;">
+                
+                <!-- Pemberitahuan jika iframe terblokir browser -->
+                <div class="p-2 bg-light border-bottom text-center small text-muted">
+                    Jika tabel tidak muncul otomatis, <a href="http://www.cekmitra.com/harga.js.php?id=d20fb2e3b6062b6477e17339692acff1236df6429fa4508d8a80756f840032d6df87ed62592aaf7c9e63e10030c5de32cfe9-126" target="_blank" rel="noopener noreferrer" class="fw-bold text-primary">Klik di sini untuk membuka di tab baru</a>.
                 </div>
+            
+                <iframe 
+                    src="https://www.cekmitra.com/harga.js.php?id=d20fb2e3b6062b6477e17339692acff1236df6429fa4508d8a80756f840032d6df87ed62592aaf7c9e63e10030c5de32cfe9-126" 
+                    style="width: 100%; height: calc(100% - 40px); border: none;"
+                    loading="lazy">
+                </iframe>
             </div>
             
             <!-- Footer Modal -->
